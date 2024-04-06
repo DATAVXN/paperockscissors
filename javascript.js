@@ -13,8 +13,7 @@ Make your function’s playerSelection parameter case-insensitive (so users can 
 */
 
 function getPlayerChoice () {
-  const playerItems = [`Rock`, `Paper`, `Scissors`];
-  let playerChoice = prompt(`Choose Rock, Paper, or Scissor`).toLowerCase();
+    let playerChoice = prompt(`Choose Rock, Paper, or Scissor`).toLowerCase();
     return playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1);
 }
 
