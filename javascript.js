@@ -7,20 +7,24 @@ function getComputerChoice () {
   return choice;
   }
 
-  /*
-  Write a function that plays a single round of Rock Paper Scissors. The function should take two parameters - the playerSelection and computerSelection - and then return a string that declares the winner or tie of the round like so: "You Lose! Paper beats Rock"
+/*
+Write a function that plays a single round of Rock Paper Scissors. The function should take two parameters - the playerSelection and computerSelection - and then return a string that declares the winner or tie of the round like so: "You Lose! Paper beats Rock"
+Make your function’s playerSelection parameter case-insensitive (so users can input rock, ROCK, RocK or any other variation).
+*/
 
-  Make your function’s playerSelection parameter case-insensitive (so users can input rock, ROCK, RocK or any other variation).
-  */
+function getPlayerChoice () {
+  const playerItems = [`Rock`, `Paper`, `Scissors`];
+  let playerChoice = prompt(`Choose one: ${playerItems}`);
+  playerChoice = playerChoice.toLowerCase();
+  return playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1);
 
-  function getPlayerChoice () {
-    let playerChoice = prompt(`What do you choose?! Rock, Paper, Scissors?!?`)
-    playerChoice = playerChoice.toLowerCase();
-    return playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1);
-    }
-  
-    console.log(getPlayerChoice ());
-    console.log(getComputerChoice());
+}
+
+
+console.log(getPlayerChoice ());
+console.log(getComputerChoice());
+
+
 
   
 
