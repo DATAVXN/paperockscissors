@@ -29,3 +29,26 @@ Make your function’s playerSelection parameter case-insensitive (so users can 
 
 let playerScored = 0;
 let computerScored = 0;
+
+function scorecard (getPlayerChoice, getComputerChoice) { 
+  if (getPlayerChoice === 'Rock' && getComputerChoice === 'Scissors' ||
+      getPlayerChoice === 'Paper' && getComputerChoice === 'Rock' ||
+      getPlayerChoice === 'Scissors' && getComputerChoice === 'Paper') {
+      playerScored += 1; 
+      console.log(playerScored);
+        } else if (
+          getPlayerChoice === 'Scissors' && getComputerChoice === 'Rock' ||
+          getPlayerChoice === 'Rock' && getComputerChoice === 'Paper' ||
+          getPlayerChoice === 'Paper' && getComputerChoice === 'Scissors') {
+          computerScored += 1; 
+          console.log(computerScored);
+            } else if (
+              getPlayerChoice === 'Rock' && getComputerChoice === 'Rock' ||
+              getPlayerChoice === 'Paper' && getComputerChoice === 'Paper' ||
+              getPlayerChoice === 'Scissors' && getComputerChoice === 'Scissors') {
+                playerScored += 1; 
+                computerScored += 1;
+                console.log(playerScored);
+                console.log(computerScored);
+            } else end; 
+          }
