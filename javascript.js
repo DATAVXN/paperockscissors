@@ -54,9 +54,5 @@ function compareChoices() {
       }
 }
 
-
-
-
-console.log(playerSelection);
-console.log(computerSelection);
+console.log(`You entered ${playerSelection} and computer picked ${computerSelection}`);
 console.log(compareChoices());
