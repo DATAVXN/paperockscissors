@@ -1,8 +1,9 @@
 /* 
 Your game is going to play against the computer, so begin with a function called getComputerChoice that will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’. We’ll use this function in the game to make the computer’s play. Tip: use the console to make sure this is returning the expected output before moving to the next step!
 */
+const items = [`rock`, `paper`, `scissors`];
+
 function getComputerChoice () {
-  const items = [`Rock`, `Paper`, `Scissors`];
   let choice = items[Math. floor(Math. random() * items.length)]
   return choice;
   }
@@ -13,16 +14,16 @@ Make your function’s playerSelection parameter case-insensitive (so users can 
 */
 
 function getPlayerChoice () {
-    let playerChoice = prompt(`Choose Rock, Paper, or Scissor`).toLowerCase();
-    return playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1);
-}
+  let playerChoice = prompt(`Choose Rock, Paper, or Scissor`).toLowerCase();
+  let answer = playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1);
+  if (playerChoice === 'rock' ||
+      playerChoice === 'paper' ||
+      playerChoice === 'scissor') {
+         prompt(`You chose ${answer}!`);
+      } else {
+        prompt(`Not a valid choice; try again!`)
+      } 
+   }
 
 console.log(getPlayerChoice ());
 console.log(getComputerChoice());
-
-
-
-
-  
-
-
