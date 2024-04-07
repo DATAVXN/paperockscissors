@@ -45,6 +45,15 @@ function compareChoices() {
         return 'You Win!';
         }
       }
+    if (playerSelection === 'Scissor') { 
+      if (computerSelection === 'Rock'){
+        return 'Computer wins!';
+      } else {
+        return 'You Win!';
+        }
+      }
 }
 
+console.log(playerSelection);
+console.log(computerSelection);
 console.log(compareChoices());
