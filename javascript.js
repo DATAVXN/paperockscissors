@@ -35,21 +35,21 @@ function scorecard (getPlayerChoice, getComputerChoice) {
       (getPlayerChoice === 'Paper' && getComputerChoice === 'Rock') ||
       (getPlayerChoice === 'Scissors' && getComputerChoice === 'Paper')) {
         playerScored += 1; 
-        console.log(playerScored);
+        return playerScored;
       } else if (
           (getPlayerChoice === 'Scissors' && getComputerChoice === 'Rock') ||
           (getPlayerChoice === 'Rock' && getComputerChoice === 'Paper') ||
           (getPlayerChoice === 'Paper' && getComputerChoice === 'Scissors')) {
             computerScored += 1; 
-            console.log(computerScored);
+            return computerScored;
             } else if (
               (getPlayerChoice === 'Rock' && getComputerChoice === 'Rock') ||
               (getPlayerChoice === 'Paper' && getComputerChoice === 'Paper') ||
               (getPlayerChoice === 'Scissors' && getComputerChoice === 'Scissors')){
                 playerScored += 1; 
                 computerScored += 1;
-                console.log(playerScored);
-                console.log(computerScored);
+                return playerScored;
+                return computerScored;
             } 
 }
 
