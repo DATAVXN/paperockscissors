@@ -28,13 +28,12 @@ let playerSelection = getPlayerChoice();
 let computerSelection = getComputerChoice();
 
 function compareChoices() {
-   if (playerSelection === computerSelection) {
-      console.log('Tie!')
-   } else {
-    console.log(playerSelection);
-    console.log(computerSelection);
+  if (playerSelection === computerSelection) {
+      return 'Tie!'
+   }  else {
+        console.log(playerSelection);
+        console.log(computerSelection);
    }
-   
   }
 
 console.log(compareChoices());
