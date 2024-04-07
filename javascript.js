@@ -56,3 +56,5 @@ function compareChoices() {
 
 console.log(`You entered ${playerSelection} and computer picked ${computerSelection}`);
 console.log(compareChoices());
+
+/*Write a NEW function called playGame(). Use the previous function inside of this one to play a five round game that keeps score and reports a winner or loser at the end.*/
