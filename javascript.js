@@ -30,10 +30,10 @@ let computerSelection = getComputerChoice();
 function compareChoices() {
   if (playerSelection === computerSelection) {
       return 'Tie!'
-   }  else {
-        console.log(playerSelection);
-        console.log(computerSelection);
-   }
+  } 
+  if (playerSelection = 'Rock' && computerSelection === 'Paper'){
+    return 'Computer won!'
   }
+}
 
 console.log(compareChoices());
