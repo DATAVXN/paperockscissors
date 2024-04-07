@@ -29,13 +29,22 @@ let computerSelection = getComputerChoice();
 
 function compareChoices() {
   if (playerSelection === computerSelection) {
-      return 'Tie!'
-  } 
-  if (playerSelection = 'Rock' && computerSelection === 'Paper'){
-    return 'Computer wins!'
-  } else {
-    return 'You Win!'
-  }
+      return 'Tie!';
+    } 
+  if (playerSelection === 'Rock') { 
+    if (computerSelection === 'Paper'){
+      return 'Computer wins!';
+    } else {
+      return 'You Win!';
+      }
+    }
+    if (playerSelection === 'Paper') { 
+      if (computerSelection === 'Scissor'){
+        return 'Computer wins!';
+      } else {
+        return 'You Win!';
+        }
+      }
 }
 
 console.log(compareChoices());
