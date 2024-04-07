@@ -18,7 +18,7 @@ function getPlayerChoice () {
       playerChoice === 'scissor') {
          return playerAnswer;
       } else {
-         prompt(`Not a valid choice; start over!`)
+         prompt(`Not a valid choice.  Try again!`);
       } 
     }
 
@@ -29,28 +29,22 @@ Make your function’s playerSelection parameter case-insensitive (so users can 
 
 let playerScored = 0;
 let computerScored = 0;
+let tie = 0;
 
 function scorecard (getPlayerChoice, getComputerChoice) { 
-  if ((getPlayerChoice === 'Rock' && getComputerChoice === 'Scissors') ||
-      (getPlayerChoice === 'Paper' && getComputerChoice === 'Rock') ||
-      (getPlayerChoice === 'Scissors' && getComputerChoice === 'Paper')) {
+  if () {
         playerScored += 1; 
+        return playerScored;
       } else if (
-          (getPlayerChoice === 'Scissors' && getComputerChoice === 'Rock') ||
-          (getPlayerChoice === 'Rock' && getComputerChoice === 'Paper') ||
-          (getPlayerChoice === 'Paper' && getComputerChoice === 'Scissors')) {
-            computerScored += 1; 
+           computerScored += 1; 
+            return computerScored;
             } else if (
-              (getPlayerChoice === 'Rock' && getComputerChoice === 'Rock') ||
-              (getPlayerChoice === 'Paper' && getComputerChoice === 'Paper') ||
-              (getPlayerChoice === 'Scissors' && getComputerChoice === 'Scissors')){
-                playerScored += 1; 
-                computerScored += 1;
+                tie += 1; 
+                return tie;
             } 
-   return playerScored
-   return computerScored         
-}
+  }
+
 
 console.log(getPlayerChoice());
 console.log(getComputerChoice());
-console.log(scorecard());
+console.log(scorecard(playerScored, computerScored));
