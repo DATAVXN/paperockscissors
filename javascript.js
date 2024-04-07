@@ -32,7 +32,9 @@ function compareChoices() {
       return 'Tie!'
   } 
   if (playerSelection = 'Rock' && computerSelection === 'Paper'){
-    return 'Computer won!'
+    return 'Computer wins!'
+  } else {
+    return 'You Win!'
   }
 }
 
