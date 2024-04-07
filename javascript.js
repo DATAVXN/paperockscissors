@@ -4,8 +4,9 @@ Your game is going to play against the computer, so begin with a function called
 const items = [`rock`, `paper`, `scissors`];
 
 function getComputerChoice () {
-  let choice = items[Math. floor(Math. random() * items.length)]
-  return choice;
+  let computerChoice = items[Math. floor(Math. random() * items.length)].toLowerCase();
+  let computerAnswer = computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1);
+  return computerAnswer;
   }
 
 /*
@@ -15,15 +16,15 @@ Make your function’s playerSelection parameter case-insensitive (so users can 
 
 function getPlayerChoice () {
   let playerChoice = prompt(`Choose Rock, Paper, or Scissor`).toLowerCase();
-  let answer = playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1);
+  let playerAnswer = playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1);
   if (playerChoice === 'rock' ||
       playerChoice === 'paper' ||
       playerChoice === 'scissor') {
-         prompt(`You chose ${answer}!`);
+         return (`You chose ${playerAnswer}!`);
       } else {
-        prompt(`Not a valid choice; try again!`)
+         prompt(`Not a valid choice; try again!`)
       } 
-   }
+  }
 
 console.log(getPlayerChoice ());
 console.log(getComputerChoice());
