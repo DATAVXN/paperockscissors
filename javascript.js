@@ -6,7 +6,13 @@ const items = [`rock`, `paper`, `scissors`];
 function getComputerChoice () {
   let computerChoice = items[Math. floor(Math. random() * items.length)].toLowerCase();
   let computerAnswer = computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1);
-  return computerAnswer;
+  if (computerChoice === 'rock' ||
+      computerChoice === 'paper' ||
+      computerChoice === 'scissor') {
+         return (`Computer chose ${computerAnswer}!`);
+      } else {
+        return computerAnswer;
+      } 
   }
 
 /*
