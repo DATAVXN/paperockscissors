@@ -26,8 +26,11 @@ Make your function’s playerSelection parameter case-insensitive (so users can 
 */
 let playerSelection = getPlayerChoice();
 let computerSelection = getComputerChoice();
+let playerScore = 0;
+let computerScore = 0;
 
 function compareChoices() {
+  for ( i=0; i<=5; i++) {
   if (playerSelection === computerSelection) {
       return 'Tie!';
     } 
@@ -52,9 +55,12 @@ function compareChoices() {
         return 'You Win!';
         }
       }
+    }
 }
 
 console.log(`You entered ${playerSelection} and computer picked ${computerSelection}`);
 console.log(compareChoices());
 
 /*Write a NEW function called playGame(). Use the previous function inside of this one to play a five round game that keeps score and reports a winner or loser at the end.*/
+
+
