@@ -36,22 +36,28 @@ function compareChoices() {
     } 
   if (playerSelection === 'Rock') { 
     if (computerSelection === 'Paper'){
+      computerScore += 1;
       return 'You Lose! Paper beats rock!';
     } else {
+      playerScore += 1;
       return 'You Win!';
       }
     }
     if (playerSelection === 'Paper') { 
       if (computerSelection === 'Scissor'){
+        computerScore += 1;
         return 'You Lose! Scissor beats Paper!!';
       } else {
+        playerScore += 1;
         return 'You Win!';
         }
       }
     if (playerSelection === 'Scissor') { 
       if (computerSelection === 'Rock'){
+        computerScore += 1;
         return 'You Lose! Rock beats Scissor!!';
       } else {
+        playerScore += 1;
         return 'You Win!';
         }
       }
@@ -60,6 +66,8 @@ function compareChoices() {
 
 console.log(`You entered ${playerSelection} and computer picked ${computerSelection}`);
 console.log(compareChoices());
+console.log(playerScore);
+console.log(computerScore);
 
 /*Write a NEW function called playGame(). Use the previous function inside of this one to play a five round game that keeps score and reports a winner or loser at the end.*/
 
