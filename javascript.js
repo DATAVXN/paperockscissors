@@ -71,4 +71,8 @@ console.log(computerScore);
 
 /*Write a NEW function called playGame(). Use the previous function inside of this one to play a five round game that keeps score and reports a winner or loser at the end.*/
 
+const playGame = function (compareChoices) {
+  
+}
+
 
